@@ -1,0 +1,273 @@
+/* Umum */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Latar belakang hitam gelap */
+    color: #fff; /* Teks berwarna putih */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333; /* Navbar dengan latar belakang gelap */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF00FF; /* Neon pink untuk logo */
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #FF00FF; /* Efek neon pada teks */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #00FFFF; /* Neon biru untuk tautan */
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 5px #00FFFF; /* Efek neon biru saat hover */
+}
+
+.navbar .nav-links a:hover {
+    color: #FF00FF; /* Neon pink saat hover */
+    text-shadow: 0 0 20px #FF00FF;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #121212, #333);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FF00FF; /* Neon pink */
+    text-shadow: 0 0 10px #FF00FF;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #00FFFF; /* Neon biru untuk tombol */
+    color: #121212;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-shadow: 0 0 5px #00FFFF;
+}
+
+.hero .btn:hover {
+    background-color: #FF00FF; /* Neon pink saat hover */
+    color: #fff;
+    text-shadow: 0 0 20px #FF00FF;
+}
+
+/* Account Forms (Login/Register) */
+.account {
+    padding: 50px 20px;
+    background-color: #222; /* Latar belakang lebih gelap */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.account h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FF00FF; /* Neon pink untuk heading */
+    text-shadow: 0 0 10px #FF00FF;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555; /* Border gelap */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #00FFFF; 
+    color: #121212;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-shadow: 0 0 5px #00FFFF;
+}
+
+.form button:hover {
+    background-color: #FF00FF; /* Neon pink */
+    color: #fff;
+    text-shadow: 0 0 20px #FF00FF;
+}
+
+/* Kategori */
+.categories {
+    padding: 50px 20px;
+    background-color: #222; /* Latar belakang gelap untuk kategori */
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FF00FF; /* Neon pink */
+    text-shadow: 0 0 10px #FF00FF;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    text-align: center;
+    background: #333;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background: #444; /* Menambahkan perubahan warna saat hover */
+}
+
+.category-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    font-size: 18px;
+    color: #00FFFF; /* Neon biru */
+    text-shadow: 0 0 10px #00FFFF;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #00FFFF; /* Neon biru untuk teks */
+    text-align: center;
+    padding: 15px 20px;
+    text-shadow: 0 0 5px #00FFFF;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+
+/* Untuk perangkat kecil (HP - lebar layar maksimal 600px) */
+@media (max-width: 600px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr; /* Satu kolom */
+    }
+
+    .account {
+        padding: 30px 15px;
+    }
+
+    .form input, 
+    .form button {
+        font-size: 14px;
+    }
+}
+
+/* Untuk perangkat sedang (iPad - lebar layar maksimal 1024px) */
+@media (max-width: 1024px) {
+    .navbar .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dua kolom */
+    }
+
+    .account {
+        padding: 40px 20px;
+    }
+}
+
+/* Untuk perangkat besar (Laptop - lebar layar maksimal 1440px) */
+@media (max-width: 1440px) {
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr); /* Tiga kolom */
+    }
+
+    .account {
+        padding: 50px 30px;
+    }
+
+    .form input,
+    .form button {
+        font-size: 16px;
+    }
+}
